@@ -1,0 +1,16 @@
+PODS:
+  - Jiffy (0.1.0)
+
+DEPENDENCIES:
+  - Jiffy (from `../`)
+
+EXTERNAL SOURCES:
+  Jiffy:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Jiffy: ff097507893ddd54d1851845763c6afe7b51a997
+
+PODFILE CHECKSUM: e96a3c20b453fb26d1bd8a6e3e7167abd305b7ef
+
+COCOAPODS: 1.1.0.rc.3
