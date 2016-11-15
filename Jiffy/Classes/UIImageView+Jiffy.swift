@@ -45,7 +45,7 @@ public extension UIImageView {
         
     }
     
-    public func setAnimatedImage(_ animatedImage: UIImage, memoryLimit: Int = kDefaultMemoryLimit) {
+    private func setAnimatedImage(_ animatedImage: UIImage, memoryLimit: Int = kDefaultMemoryLimit) {
         
         storage = AnimatedImageViewStorage()
         storage!.aImage = animatedImage
@@ -72,39 +72,53 @@ public extension UIImageView {
         
     }
     
-    public func play() {
-        storage!.needToPlay = true
+    public func playAnimatedImage() {
+        
+        guard let storage = storage else {
+            print("Trying to animate a UIImage without animatedImageData!")
+            return
+        }
+        
+        storage.needToPlay = true
+        
     }
     
-    public func stop() {
-        storage!.needToPlay = false
+    public func stopAnimatedImage() {
+        
+        guard let storage = storage else {
+            print("Trying to stop animation on a UIImage without animatedImageData!")
+            return
+        }
+        
+        storage.needToPlay = false
+        
     }
     
-    public func getPlayJudge() -> Bool {
+    internal func getPlayJudge() -> Bool {
         return storage!.needToPlay!
     }
     
-    public func getTimer() -> CADisplayLink {
+    internal func getTimer() -> CADisplayLink {
         return storage!.timer!
     }
     
-    public func getAnimatedImage() -> UIImage {
+    internal func getAnimatedImage() -> UIImage {
         return storage!.aImage!
     }
     
-    public func getDisplayOrderIndex() -> Int{
+    internal func getDisplayOrderIndex() -> Int{
         return storage!.displayOrderIndex!
     }
     
-    public func getCurrentImage() -> UIImage{
+    internal func getCurrentImage() -> UIImage{
         return storage!.currentImage!
     }
     
-    public func getImageCache() -> NSCache<AnyObject, UIImage> {
+    internal func getImageCache() -> NSCache<AnyObject, UIImage> {
         return storage!.cache!
     }
     
-    func prepareCache() {
+    private func prepareCache() {
         
         storage!.cache = NSCache()
         
@@ -120,7 +134,7 @@ public extension UIImageView {
     }
     
     // Bound to 'displayLink'
-    func updateFrameWithoutCache() {
+    @objc private func updateFrameWithoutCache() {
         
         if(self.getPlayJudge() == true) {
             
@@ -140,7 +154,7 @@ public extension UIImageView {
     }
     
     // Bound to 'displayLink'
-    func updateFrameWithCache() {
+    @objc private func updateFrameWithCache() {
         
         if(self.getPlayJudge() == true) {
             

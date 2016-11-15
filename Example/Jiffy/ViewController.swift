@@ -29,7 +29,7 @@ class ViewController: UIViewController {
                 imageView.center = view.center
                 view.addSubview(imageView)
                 
-                imageView.play()
+                imageView.playAnimatedImage()
                 
             }
             catch {
