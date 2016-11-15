@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Jiffy_Example' do
+  pod 'Jiffy', :path => '../'
+
+  target 'Jiffy_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
