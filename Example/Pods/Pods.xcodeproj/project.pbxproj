@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A5EEE1BDF953839A1C8240443D3478B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		26587DB5E4974FDC8CFDFDD367D31C98 /* Jiffy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E98AAB727515DDF748CF368459C845 /* Jiffy-dummy.m */; };
+		276D66DA618A020860DD74C86A349F89 /* Pods-Jiffy_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0B5D7E4303BCD809B6637705F8C69 /* Pods-Jiffy_Tests-dummy.m */; };
+		3010064A1DDB8A99009334D2 /* UIImage+Jiffy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301006491DDB8A99009334D2 /* UIImage+Jiffy.swift */; };
+		3010064C1DDB8AA6009334D2 /* UIImageView+Jiffy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010064B1DDB8AA6009334D2 /* UIImageView+Jiffy.swift */; };
+		45FB848B8B7079E24A5784E7B9EE1B4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		63C8E920A73293B4F3777128569E48A2 /* Pods-Jiffy_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB1A13F93A50CB47DD7AB1B1C2E648F /* Pods-Jiffy_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7867F311A9D7020B3C4016FF4896D461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B318134E217D3207618C0929111F0A31 /* Pods-Jiffy_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6B85A409C630989799355E7444076C /* Pods-Jiffy_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4538D6841F49E1AF7368CA73DB5B685 /* Jiffy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C94E3BC7A4C872F5897D3F49C46E059B /* Jiffy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8362A2C067D827F133542FF73EBDF19 /* Pods-Jiffy_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D1DFFC3BCD67C1F8EA6F8789746569 /* Pods-Jiffy_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BA3A68BEB4BE2F676467CFEC52F51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E07471AE96799119C2D4DCAD27C85365;
+			remoteInfo = Jiffy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C9C6CBB22527BBAB34AF0A9FACC02A9 /* Pods-Jiffy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jiffy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D6B85A409C630989799355E7444076C /* Pods-Jiffy_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Jiffy_Example-umbrella.h"; sourceTree = "<group>"; };
+		1FF9F36334E2A6568817830A91CB6D47 /* Pods-Jiffy_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jiffy_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		29F5F0DC0F81B4E2943E24E625F4CA40 /* Pods-Jiffy_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jiffy_Tests-resources.sh"; sourceTree = "<group>"; };
+		301006491DDB8A99009334D2 /* UIImage+Jiffy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Jiffy.swift"; sourceTree = "<group>"; };
+		3010064B1DDB8AA6009334D2 /* UIImageView+Jiffy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Jiffy.swift"; sourceTree = "<group>"; };
+		30687F0245DCB8EC759595E89D2A9E9C /* Pods-Jiffy_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Jiffy_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EB9EB43A3929ACBB63D85B4652A3244 /* Pods-Jiffy_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Jiffy_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F689ABF46C85E5BDA04EE86A82878B5 /* Pods-Jiffy_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Jiffy_Tests.modulemap"; sourceTree = "<group>"; };
+		46AEA6F6D38424812E5116A92C6713CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF9E5A1C52B854848625AC04250DBB1 /* Pods_Jiffy_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jiffy_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5844F91224A3E886EBE7E2C6F01ACD /* Jiffy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Jiffy.modulemap; sourceTree = "<group>"; };
+		67E76D1EB3F2245750FB14D88BE6074F /* Pods-Jiffy_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jiffy_Example.release.xcconfig"; sourceTree = "<group>"; };
+		687F66B02DF60AF6DEF675DE4D3DAE47 /* Pods-Jiffy_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jiffy_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7739C18C73F079A65D0AD18A7EEAFF55 /* Pods-Jiffy_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jiffy_Example-resources.sh"; sourceTree = "<group>"; };
+		836F7E3FCD674EEE04292A0E186EBE2A /* Pods-Jiffy_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Jiffy_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BA0B5D7E4303BCD809B6637705F8C69 /* Pods-Jiffy_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Jiffy_Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97D1DFFC3BCD67C1F8EA6F8789746569 /* Pods-Jiffy_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Jiffy_Example-dummy.m"; sourceTree = "<group>"; };
+		AAA8FBA85B36420ACE1DC0E31B2F70DA /* Pods-Jiffy_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Jiffy_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC9C6D3446FA1BE769E358719DF25054 /* Pods-Jiffy_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Jiffy_Example.modulemap"; sourceTree = "<group>"; };
+		B1B7E999677129B261A27ADA6A5E7060 /* Jiffy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jiffy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E98AAB727515DDF748CF368459C845 /* Jiffy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Jiffy-dummy.m"; sourceTree = "<group>"; };
+		BDB1A13F93A50CB47DD7AB1B1C2E648F /* Pods-Jiffy_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Jiffy_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C93618BD7E6F125455C7CC6A4210169F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94E3BC7A4C872F5897D3F49C46E059B /* Jiffy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jiffy-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3671D7357975DF7FE2BB3F06CF0E006 /* Pods-Jiffy_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jiffy_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E20506D08E382135B3E72237E33AF6CC /* Pods-Jiffy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jiffy_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EBE75E811515EC793108AA275FFE9902 /* Jiffy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jiffy.xcconfig; sourceTree = "<group>"; };
+		EC249105CC31356190B8465DE7E66208 /* Pods_Jiffy_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jiffy_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F138C13011C9165143924A29AC6D4831 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE3D0B90330542E2F018B90B10058C3 /* Jiffy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jiffy-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC995C47E49A75491467146310AF42F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5EEE1BDF953839A1C8240443D3478B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936BFE8B63B626DB58F19B3AF6C35902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7867F311A9D7020B3C4016FF4896D461 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE91BE15D00E6EEDB98A448F5203F3D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FB848B8B7079E24A5784E7B9EE1B4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01FF1F23D6A0225C468348AD6A02B2FC /* Jiffy */ = {
+			isa = PBXGroup;
+			children = (
+				9319BBC6955AE73D2D13EAA5C9D4F24E /* Jiffy */,
+				17196680F0894F3B6E3013BFA0343EF3 /* Support Files */,
+			);
+			name = Jiffy;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		16ED9D0088087F5289F6D1068BB4EE6E /* Pods-Jiffy_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F138C13011C9165143924A29AC6D4831 /* Info.plist */,
+				AC9C6D3446FA1BE769E358719DF25054 /* Pods-Jiffy_Example.modulemap */,
+				836F7E3FCD674EEE04292A0E186EBE2A /* Pods-Jiffy_Example-acknowledgements.markdown */,
+				AAA8FBA85B36420ACE1DC0E31B2F70DA /* Pods-Jiffy_Example-acknowledgements.plist */,
+				97D1DFFC3BCD67C1F8EA6F8789746569 /* Pods-Jiffy_Example-dummy.m */,
+				687F66B02DF60AF6DEF675DE4D3DAE47 /* Pods-Jiffy_Example-frameworks.sh */,
+				7739C18C73F079A65D0AD18A7EEAFF55 /* Pods-Jiffy_Example-resources.sh */,
+				0D6B85A409C630989799355E7444076C /* Pods-Jiffy_Example-umbrella.h */,
+				1FF9F36334E2A6568817830A91CB6D47 /* Pods-Jiffy_Example.debug.xcconfig */,
+				67E76D1EB3F2245750FB14D88BE6074F /* Pods-Jiffy_Example.release.xcconfig */,
+			);
+			name = "Pods-Jiffy_Example";
+			path = "Target Support Files/Pods-Jiffy_Example";
+			sourceTree = "<group>";
+		};
+		17196680F0894F3B6E3013BFA0343EF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93618BD7E6F125455C7CC6A4210169F /* Info.plist */,
+				4C5844F91224A3E886EBE7E2C6F01ACD /* Jiffy.modulemap */,
+				EBE75E811515EC793108AA275FFE9902 /* Jiffy.xcconfig */,
+				B5E98AAB727515DDF748CF368459C845 /* Jiffy-dummy.m */,
+				FBE3D0B90330542E2F018B90B10058C3 /* Jiffy-prefix.pch */,
+				C94E3BC7A4C872F5897D3F49C46E059B /* Jiffy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Jiffy";
+			sourceTree = "<group>";
+		};
+		3428CB8E5553EC5D5E174A7CB16EFB7F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01FF1F23D6A0225C468348AD6A02B2FC /* Jiffy */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		436ABC29944171AE8D2BE4929307B304 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16ED9D0088087F5289F6D1068BB4EE6E /* Pods-Jiffy_Example */,
+				A4E134BADA71F31C78B67BFDDBB770FA /* Pods-Jiffy_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		453858C3CD7EF8DB6CAEF1F2FA6C4D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1B7E999677129B261A27ADA6A5E7060 /* Jiffy.framework */,
+				4AF9E5A1C52B854848625AC04250DBB1 /* Pods_Jiffy_Example.framework */,
+				EC249105CC31356190B8465DE7E66208 /* Pods_Jiffy_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3428CB8E5553EC5D5E174A7CB16EFB7F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				453858C3CD7EF8DB6CAEF1F2FA6C4D07 /* Products */,
+				436ABC29944171AE8D2BE4929307B304 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D88049568CD26D7F7AB71AA12FB2AA3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				301006491DDB8A99009334D2 /* UIImage+Jiffy.swift */,
+				3010064B1DDB8AA6009334D2 /* UIImageView+Jiffy.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9319BBC6955AE73D2D13EAA5C9D4F24E /* Jiffy */ = {
+			isa = PBXGroup;
+			children = (
+				8D88049568CD26D7F7AB71AA12FB2AA3 /* Classes */,
+			);
+			path = Jiffy;
+			sourceTree = "<group>";
+		};
+		A4E134BADA71F31C78B67BFDDBB770FA /* Pods-Jiffy_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46AEA6F6D38424812E5116A92C6713CE /* Info.plist */,
+				3F689ABF46C85E5BDA04EE86A82878B5 /* Pods-Jiffy_Tests.modulemap */,
+				30687F0245DCB8EC759595E89D2A9E9C /* Pods-Jiffy_Tests-acknowledgements.markdown */,
+				3EB9EB43A3929ACBB63D85B4652A3244 /* Pods-Jiffy_Tests-acknowledgements.plist */,
+				8BA0B5D7E4303BCD809B6637705F8C69 /* Pods-Jiffy_Tests-dummy.m */,
+				D3671D7357975DF7FE2BB3F06CF0E006 /* Pods-Jiffy_Tests-frameworks.sh */,
+				29F5F0DC0F81B4E2943E24E625F4CA40 /* Pods-Jiffy_Tests-resources.sh */,
+				BDB1A13F93A50CB47DD7AB1B1C2E648F /* Pods-Jiffy_Tests-umbrella.h */,
+				0C9C6CBB22527BBAB34AF0A9FACC02A9 /* Pods-Jiffy_Tests.debug.xcconfig */,
+				E20506D08E382135B3E72237E33AF6CC /* Pods-Jiffy_Tests.release.xcconfig */,
+			);
+			name = "Pods-Jiffy_Tests";
+			path = "Target Support Files/Pods-Jiffy_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B17573B509969315638C12E3073719A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C8E920A73293B4F3777128569E48A2 /* Pods-Jiffy_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26783E6C09255BED9DB31AE8247FB12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B318134E217D3207618C0929111F0A31 /* Pods-Jiffy_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5CA088471EE6D9140D46819C061978E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4538D6841F49E1AF7368CA73DB5B685 /* Jiffy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		157BF72A7CE44F7C931AB66B1F5774FD /* Pods-Jiffy_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0744FB5AE17EBB1C0AAC590B201B5885 /* Build configuration list for PBXNativeTarget "Pods-Jiffy_Tests" */;
+			buildPhases = (
+				F70302C09DCEA60785FE5A2CCB210116 /* Sources */,
+				BE91BE15D00E6EEDB98A448F5203F3D7 /* Frameworks */,
+				9B17573B509969315638C12E3073719A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Jiffy_Tests";
+			productName = "Pods-Jiffy_Tests";
+			productReference = EC249105CC31356190B8465DE7E66208 /* Pods_Jiffy_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22EDAFA1AF1648D489A80451C2CEE3A1 /* Pods-Jiffy_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFACEE06608B6FFB3B0891AC85C12D5E /* Build configuration list for PBXNativeTarget "Pods-Jiffy_Example" */;
+			buildPhases = (
+				B790CFF83CCE6DA10D66BEADD72EE921 /* Sources */,
+				936BFE8B63B626DB58F19B3AF6C35902 /* Frameworks */,
+				B26783E6C09255BED9DB31AE8247FB12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD4C7C9C38C73A80B0DE6F45616276A /* PBXTargetDependency */,
+			);
+			name = "Pods-Jiffy_Example";
+			productName = "Pods-Jiffy_Example";
+			productReference = 4AF9E5A1C52B854848625AC04250DBB1 /* Pods_Jiffy_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E07471AE96799119C2D4DCAD27C85365 /* Jiffy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9114B90A79EF02845D8D04CF75CE76 /* Build configuration list for PBXNativeTarget "Jiffy" */;
+			buildPhases = (
+				716D08FEC6F46E9366DE66283D46BA5D /* Sources */,
+				1CC995C47E49A75491467146310AF42F /* Frameworks */,
+				B5CA088471EE6D9140D46819C061978E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jiffy;
+			productName = Jiffy;
+			productReference = B1B7E999677129B261A27ADA6A5E7060 /* Jiffy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					22EDAFA1AF1648D489A80451C2CEE3A1 = {
+						LastSwiftMigration = 0810;
+					};
+					E07471AE96799119C2D4DCAD27C85365 = {
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 453858C3CD7EF8DB6CAEF1F2FA6C4D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E07471AE96799119C2D4DCAD27C85365 /* Jiffy */,
+				22EDAFA1AF1648D489A80451C2CEE3A1 /* Pods-Jiffy_Example */,
+				157BF72A7CE44F7C931AB66B1F5774FD /* Pods-Jiffy_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716D08FEC6F46E9366DE66283D46BA5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3010064A1DDB8A99009334D2 /* UIImage+Jiffy.swift in Sources */,
+				3010064C1DDB8AA6009334D2 /* UIImageView+Jiffy.swift in Sources */,
+				26587DB5E4974FDC8CFDFDD367D31C98 /* Jiffy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B790CFF83CCE6DA10D66BEADD72EE921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8362A2C067D827F133542FF73EBDF19 /* Pods-Jiffy_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70302C09DCEA60785FE5A2CCB210116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276D66DA618A020860DD74C86A349F89 /* Pods-Jiffy_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BD4C7C9C38C73A80B0DE6F45616276A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jiffy;
+			target = E07471AE96799119C2D4DCAD27C85365 /* Jiffy */;
+			targetProxy = C6BA3A68BEB4BE2F676467CFEC52F51D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43D1D17F34742FFD00E670367293D5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9C6CBB22527BBAB34AF0A9FACC02A9 /* Pods-Jiffy_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Jiffy_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jiffy_Tests/Pods-Jiffy_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jiffy_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55BC3B6A6D5B50C0FFD394643C8262A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE75E811515EC793108AA275FFE9902 /* Jiffy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jiffy/Jiffy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jiffy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jiffy/Jiffy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jiffy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		57D26B3E13A51C13B18D7AC910D9F97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E76D1EB3F2245750FB14D88BE6074F /* Pods-Jiffy_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Jiffy_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jiffy_Example/Pods-Jiffy_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jiffy_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		650554BCF3850041E3BBC815AE0CF934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20506D08E382135B3E72237E33AF6CC /* Pods-Jiffy_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Jiffy_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jiffy_Tests/Pods-Jiffy_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jiffy_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		740783B78ECA8D669A0F0C5E1760ADCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF9F36334E2A6568817830A91CB6D47 /* Pods-Jiffy_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Jiffy_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jiffy_Example/Pods-Jiffy_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jiffy_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D1608A4DF39423D9EED55B3132081DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE75E811515EC793108AA275FFE9902 /* Jiffy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jiffy/Jiffy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jiffy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jiffy/Jiffy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jiffy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0744FB5AE17EBB1C0AAC590B201B5885 /* Build configuration list for PBXNativeTarget "Pods-Jiffy_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D1D17F34742FFD00E670367293D5ED /* Debug */,
+				650554BCF3850041E3BBC815AE0CF934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9114B90A79EF02845D8D04CF75CE76 /* Build configuration list for PBXNativeTarget "Jiffy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1608A4DF39423D9EED55B3132081DE0 /* Debug */,
+				55BC3B6A6D5B50C0FFD394643C8262A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFACEE06608B6FFB3B0891AC85C12D5E /* Build configuration list for PBXNativeTarget "Pods-Jiffy_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740783B78ECA8D669A0F0C5E1760ADCC /* Debug */,
+				57D26B3E13A51C13B18D7AC910D9F97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
