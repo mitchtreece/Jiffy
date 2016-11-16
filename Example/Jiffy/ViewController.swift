@@ -11,7 +11,9 @@ import Jiffy
 
 class ViewController: UIViewController {
 
-    var imageView: AnimatedImageView!
+    @IBOutlet weak var fullImageView: UIImageView!
+    @IBOutlet weak var mediumImageView: UIImageView!
+    @IBOutlet weak var lowImageView: UIImageView!
     
     override func viewDidLoad() {
         
@@ -22,14 +24,21 @@ class ViewController: UIViewController {
             do {
                 
                 let data = try Data(contentsOf: url)
-                let image = AnimatedImage(animatedImageData: data)
+                let fullImage = AnimatedImage(animatedImageData: data)
+                let mediumImage = AnimatedImage(animatedImageData: data, quality: .medium)
+                let lowImage = AnimatedImage(animatedImageData: data, quality: .low)
                 
-                imageView = AnimatedImageView(animatedImage: image)
-                imageView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.width/2)
-                imageView.center = view.center
-                view.addSubview(imageView)
+                fullImageView.animate(with: fullImage)
+                mediumImageView.animate(with: mediumImage)
+                lowImageView.animate(with: lowImage)
                 
-                imageView.playAnimatedImage()
+                let fullTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+                let mediumTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+                let lowTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+
+                fullImageView.addGestureRecognizer(fullTapRecognizer)
+                mediumImageView.addGestureRecognizer(mediumTapRecognizer)
+                lowImageView.addGestureRecognizer(lowTapRecognizer)
                 
             }
             catch {
@@ -37,7 +46,13 @@ class ViewController: UIViewController {
             }
             
         }
-
+        
+    }
+    
+    func imageViewTapped(_ recognizer: UITapGestureRecognizer) {
+        
+        guard let imageView = recognizer.view as? UIImageView else { return }
+        imageView.isAnimatingImage ? imageView.stopAnimatedImage() : imageView.playAnimatedImage()
         
     }
 

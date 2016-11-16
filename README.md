@@ -41,11 +41,21 @@ let animatedImage = UIImage(animatedImageData: imageData)
 let imageView = UIImageView(animatedImage: animatedImage)
 imageView.frame = CGRect(x: 0, y: 0, 200, height: 200)
 view.addSubview(imageView)
-
-imageView.playAnimatedImage()
 ```
 
-That's it. You now have a beautiful animated image looping in your view! If you want to stop your animated image, just call `imageView.stopAnimatedImage()`.
+That's it. You now have a beautiful animated image looping in your view! If you want to stop your animated image, just call `imageView.stopAnimatedImage()`. Naturally, a call to `imageView.playAnimatedImage()` will start your animation again.
+
+You can also tell an existing `UIImageView` to start playing an animated image. This is useful when you want to layout your views with _Storyboards_.
+
+```swift
+@IBOutlet weak var imageView: UIImageView!
+
+...
+
+let imageData = ...
+let animatedImage = UIImage(animatedImageData: imageData)
+imageView.animate(with: animatedImage)
+```
 
 ## Image Quality
 _Jiffy_ also provides a way to specify image quality. The `AnimatedImageQuality` enum is defined as follows:

@@ -16,16 +16,23 @@ let kAnimatedImageViewStorageKey = malloc(8)
 
 private class AnimatedImageViewStorage {
     
-    var needToPlay: Bool?
+    var shouldPlay: Bool?
     var timer: CADisplayLink?
-    var aImage: UIImage?
-    var displayOrderIndex: Int?
-    var currentImage: UIImage?
+    var animatedImage: UIImage?
+    var frameOrderIndex: Int?
+    var currentFrame: UIImage?
     var cache: NSCache<AnyObject, UIImage>?
     
 }
 
 public extension UIImageView {
+    
+    public var isAnimatingImage: Bool {
+        
+        guard let storage = storage, let animating = storage.shouldPlay else { return false }
+        return animating
+        
+    }
     
     private var storage: AnimatedImageViewStorage? {
         
@@ -38,21 +45,29 @@ public extension UIImageView {
         
     }
     
-    public convenience init(animatedImage: UIImage, memoryLimit: Int = kDefaultMemoryLimit) {
+    public convenience init(animatedImage: AnimatedImage, memoryLimit: Int = kDefaultMemoryLimit) {
         
         self.init()
         setAnimatedImage(animatedImage, memoryLimit: memoryLimit)
+        playAnimatedImage()
         
     }
     
-    private func setAnimatedImage(_ animatedImage: UIImage, memoryLimit: Int = kDefaultMemoryLimit) {
+    public func animate(with animatedImage: AnimatedImage, memoryLimit: Int = kDefaultMemoryLimit) {
+    
+        setAnimatedImage(animatedImage, memoryLimit: memoryLimit)
+        playAnimatedImage()
+        
+    }
+    
+    private func setAnimatedImage(_ animatedImage: AnimatedImage, memoryLimit: Int = kDefaultMemoryLimit) {
         
         storage = AnimatedImageViewStorage()
-        storage!.aImage = animatedImage
-        storage!.displayOrderIndex = 0
-        storage!.needToPlay = false
+        storage!.animatedImage = animatedImage
+        storage!.frameOrderIndex = 0
+        storage!.shouldPlay = false
         storage!.timer = nil
-        storage!.currentImage = UIImage(cgImage: CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), 0, nil)!)
+        storage!.currentFrame = UIImage(cgImage: CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), 0, nil)!)
         
         if(self.getAnimatedImage().getImageSize() >= memoryLimit) {
             storage!.timer = CADisplayLink(target: self, selector: #selector(UIImageView.updateFrameWithoutCache))
@@ -75,27 +90,27 @@ public extension UIImageView {
     public func playAnimatedImage() {
         
         guard let storage = storage else {
-            print("Trying to animate a UIImage without animatedImageData!")
+            print("Trying to animate a UIImageView without animatedImageData!")
             return
         }
         
-        storage.needToPlay = true
+        storage.shouldPlay = true
         
     }
     
     public func stopAnimatedImage() {
         
         guard let storage = storage else {
-            print("Trying to stop animation on a UIImage without animatedImageData!")
+            print("Trying to stop animation on a UIImageView without animatedImageData!")
             return
         }
         
-        storage.needToPlay = false
+        storage.shouldPlay = false
         
     }
     
-    internal func getPlayJudge() -> Bool {
-        return storage!.needToPlay!
+    internal func getShouldPlay() -> Bool {
+        return storage!.shouldPlay!
     }
     
     internal func getTimer() -> CADisplayLink {
@@ -103,15 +118,15 @@ public extension UIImageView {
     }
     
     internal func getAnimatedImage() -> UIImage {
-        return storage!.aImage!
+        return storage!.animatedImage!
     }
     
-    internal func getDisplayOrderIndex() -> Int{
-        return storage!.displayOrderIndex!
+    internal func getFrameOrderIndex() -> Int{
+        return storage!.frameOrderIndex!
     }
     
-    internal func getCurrentImage() -> UIImage{
-        return storage!.currentImage!
+    internal func getCurrentFrame() -> UIImage{
+        return storage!.currentFrame!
     }
     
     internal func getImageCache() -> NSCache<AnyObject, UIImage> {
@@ -136,16 +151,16 @@ public extension UIImageView {
     // Bound to 'displayLink'
     @objc private func updateFrameWithoutCache() {
         
-        if(self.getPlayJudge() == true) {
+        if(self.getShouldPlay() == true) {
             
-            self.image = self.getCurrentImage()
+            self.image = self.getCurrentFrame()
             
             DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
                 
                 let array = [(kCGImageSourceShouldCacheImmediately as String): kCFBooleanTrue] as CFDictionary
-                let cgImage = CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), self.getAnimatedImage().getDisplayOrder()[self.getDisplayOrderIndex()], array)
-                self.storage!.currentImage = UIImage(cgImage: cgImage!)
-                self.storage!.displayOrderIndex = (self.getDisplayOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
+                let cgImage = CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), self.getAnimatedImage().getDisplayOrder()[self.getFrameOrderIndex()], array)
+                self.storage!.currentFrame = UIImage(cgImage: cgImage!)
+                self.storage!.frameOrderIndex = (self.getFrameOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
                 
             }
             
@@ -156,14 +171,14 @@ public extension UIImageView {
     // Bound to 'displayLink'
     @objc private func updateFrameWithCache() {
         
-        if(self.getPlayJudge() == true) {
+        if(self.getShouldPlay() == true) {
             
-            let key = self.getDisplayOrderIndex() as AnyObject
+            let key = self.getFrameOrderIndex() as AnyObject
             
             if let image = self.getImageCache().object(forKey: key) {
                 
                 self.image = image
-                storage!.displayOrderIndex = (self.getDisplayOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
+                storage!.frameOrderIndex = (self.getFrameOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
                 
             }
                         
