@@ -1,5 +1,5 @@
 # Jiffy
-Easy animated images for Swift!
+Easy animated images for Swift! Based on [AImage](https://github.com/wangjwchn/AImage).
 
 [![Language](https://img.shields.io/badge/swift-3.0-orange.svg)](http://swift.org)
 [![Version](https://img.shields.io/cocoapods/v/Jiffy.svg?style=flat)](http://cocoapods.org/pods/Jiffy)
@@ -8,6 +8,8 @@ Easy animated images for Swift!
 
 ## Overview
 _Jiffy_ makes working with animated images **(.gif / .apng)** a breeze. While there are a lot of libraries out there that accomplish something similar, most of them are usually plagued with un-needed features and performance issues. _Jiffy_ aims to be a small & simple animated image library with little-to-no performance overhead.
+
+This library is named after the absurd way my co-worker tries to pronounce _"Gif"_. It's not a jar of peanut-butter, it's an animated image.
 
 ## Installation
 ### CocoaPods
