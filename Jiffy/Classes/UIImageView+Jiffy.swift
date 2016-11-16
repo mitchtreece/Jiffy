@@ -59,7 +59,7 @@ public extension UIImageView {
         }
         else {
             
-            DispatchQueue.global(priority: .high).async {
+            DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
                 self.prepareCache()
             }
             
@@ -124,7 +124,7 @@ public extension UIImageView {
         
         for i in 0..<self.getAnimatedImage().getDisplayOrder().count {
             
-            let array = [(kCGImageSourceShouldCacheImmediately as String): kCFBooleanTrue] as! CFDictionary
+            let array = [(kCGImageSourceShouldCacheImmediately as String): kCFBooleanTrue] as CFDictionary
             let cgImage = CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), self.getAnimatedImage().getDisplayOrder()[i], array)
             let image = UIImage(cgImage: cgImage!)
             self.getImageCache().setObject(image, forKey: (i as AnyObject))
@@ -140,9 +140,9 @@ public extension UIImageView {
             
             self.image = self.getCurrentImage()
             
-            DispatchQueue.global(priority: .high).async {
+            DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
                 
-                let array = [(kCGImageSourceShouldCacheImmediately as String): kCFBooleanTrue] as! CFDictionary
+                let array = [(kCGImageSourceShouldCacheImmediately as String): kCFBooleanTrue] as CFDictionary
                 let cgImage = CGImageSourceCreateImageAtIndex(self.getAnimatedImage().getImageSource(), self.getAnimatedImage().getDisplayOrder()[self.getDisplayOrderIndex()], array)
                 self.storage!.currentImage = UIImage(cgImage: cgImage!)
                 self.storage!.displayOrderIndex = (self.getDisplayOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
@@ -158,7 +158,9 @@ public extension UIImageView {
         
         if(self.getPlayJudge() == true) {
             
-            if let key = self.getDisplayOrderIndex() as? AnyObject, let image = self.getImageCache().object(forKey: key) {
+            let key = self.getDisplayOrderIndex() as AnyObject
+            
+            if let image = self.getImageCache().object(forKey: key) {
                 
                 self.image = image
                 storage!.displayOrderIndex = (self.getDisplayOrderIndex() + 1) % self.getAnimatedImage().getImageNumber()
