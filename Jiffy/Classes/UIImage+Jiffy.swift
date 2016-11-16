@@ -32,7 +32,7 @@ let kAnimatedImageStorageKey = malloc(8)
 private class AnimatedImageStorage {
     
     var imageSource: CGImageSource?
-    var displayRefreshFactor: Int?
+    var refreshFactor: Int?
     var imageSize: Int?
     var imageCount: Int?
     var displayOrder: [Int]?
@@ -84,7 +84,7 @@ public extension UIImage {
     }
     
     internal func getRefreshFactor() -> Int {
-        return storage!.displayRefreshFactor!
+        return storage!.refreshFactor!
     }
     
     internal func getImageSize() -> Int {
@@ -180,7 +180,7 @@ public extension UIImage {
             if(Float(framelosecount) <= Float(displayPosition.count) * (1.0 - quality.rawValue) || i == displayRefreshDelayTime.count - 1) {
                 
                 storage!.imageCount = displayPosition.last!
-                storage!.displayRefreshFactor = kCheckIntervals[i]
+                storage!.refreshFactor = kCheckIntervals[i]
                 storage!.displayOrder = [Int]()
                 
                 var indexOfold = 0, indexOfnew = 1

@@ -1,25 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Jiffy_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PnM-PH-FHF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="WFl-2k-d0t"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NpY-Rz-1AQ">
+                                <rect key="frame" x="0.0" y="459" width="375" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="ZlI-6C-HnE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-bt-lgk">
+                                <rect key="frame" x="0.0" y="239" width="375" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="Yb4-Dc-mea"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NpY-Rz-1AQ" secondAttribute="trailing" id="8m8-eE-hKq"/>
+                            <constraint firstAttribute="trailing" secondItem="Zgb-bt-lgk" secondAttribute="trailing" id="BTE-EF-n0i"/>
+                            <constraint firstItem="Zgb-bt-lgk" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Gg1-MQ-W2c"/>
+                            <constraint firstItem="NpY-Rz-1AQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="I9g-I0-QAC"/>
+                            <constraint firstItem="PnM-PH-FHF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="auN-tA-FEh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NpY-Rz-1AQ" secondAttribute="bottom" constant="20" id="grk-Rw-5zk"/>
+                            <constraint firstItem="Zgb-bt-lgk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jkf-Gt-D3W"/>
+                            <constraint firstAttribute="trailing" secondItem="PnM-PH-FHF" secondAttribute="trailing" id="nPo-a8-QKf"/>
+                            <constraint firstItem="PnM-PH-FHF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="vFv-Iy-RRq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fullImageView" destination="PnM-PH-FHF" id="t3t-DO-D0J"/>
+                        <outlet property="lowImageView" destination="NpY-Rz-1AQ" id="Xm0-gP-1OX"/>
+                        <outlet property="mediumImageView" destination="Zgb-bt-lgk" id="dVN-WO-JVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>

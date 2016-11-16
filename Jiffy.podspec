@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "Jiffy"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Easy animated images for Swift!"
   s.description      = <<-DESC
     Jiffy makes working with animated images (.gif / .apng) a breeze.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/mitchtreece/Jiffy.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/MitchTreece'
 
-  s.platform         = :ios, "9.0"
+  s.platform         = :ios, "8.0"
   s.source_files     = 'Jiffy/Classes/**/*'
 
 end
